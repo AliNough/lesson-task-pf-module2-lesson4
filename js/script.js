@@ -60,14 +60,12 @@ function hButton(){
 }
 
 // lesson 6
-const titleButton = document.querySelector(".tite");
+const titleButton = document.querySelector(".title");
 
 function newTitle(){
     document.title = "I've been updated";
-   let updateTitle = document.querySelector("title");
-    updateTitle.title = "helllll no";
 }
 
-titleButton.addEventListener("click") = newTitle;
+titleButton.addEventListener("click", newTitle);
 
 
