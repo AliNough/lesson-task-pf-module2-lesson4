@@ -56,8 +56,13 @@ console.log(addResult);
 const headButton = document.querySelector(".heading").addEventListener("click", hButton);
 
 function hButton(){
-    document.title = "I've been updated";
+    let headingChange = document.querySelector("h1");
+    headingChange.innerHTML += ": neww titel";
 }
+
+
+
+
 
 // lesson 6
 const titleButton = document.querySelector(".title");
@@ -66,6 +71,8 @@ function newTitle(){
     document.title = "I've been updated";
 }
 
-titleButton.addEventListener("click", newTitle);
+document.querySelector(".title").addEventListener("click", newTitle);
+
+
 
 
